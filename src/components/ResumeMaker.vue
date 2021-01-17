@@ -27,7 +27,13 @@
 export default {
   name: 'ResumeMaker',
   emits: {
-    'add-item': null
+    'add-item' ({type, text}) {
+      if (text.length > 3) {
+        return true
+      }
+      console.warn('Слишком короткое содержимое...', text.length)
+      return false
+    }
   },
   computed: {
     validBlock () {
