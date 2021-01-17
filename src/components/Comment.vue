@@ -1,10 +1,3 @@
-<template>
-  <div>
-    <p><strong>{{ comment.email }}</strong></p>
-    <small>{{ comment.body }}</small>
-  </div>
-</template>
-
 <script>
 export default {
   name: 'Comment',
@@ -14,6 +7,9 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<template>
+  <div>
+    <p><strong>{{ comment.email }}</strong></p>
+    <small>{{ comment.body }}</small>
+  </div>
+</template>

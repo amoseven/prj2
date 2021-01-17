@@ -1,9 +1,3 @@
-<template>
-  <div class="avatar">
-    <img :src="content"/>
-  </div>
-</template>
-
 <script>
 export default {
   props: {
@@ -16,6 +10,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<template>
+  <div class="avatar">
+    <img :src="content"/>
+  </div>
+</template>

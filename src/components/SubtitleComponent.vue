@@ -1,7 +1,3 @@
-<template>
-  <h2>{{ content }}</h2>
-</template>
-
 <script>
 export default {
   props: {
@@ -14,6 +10,6 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<template>
+  <h2>{{ content }}</h2>
+</template>

@@ -1,19 +1,3 @@
-<template>
-  <div class="container column">
-    <resume-maker @add-item="addItem"></resume-maker>
-
-    <div class="card card-w70">
-      <resume-component :resume="resume"></resume-component>
-    </div>
-  </div>
-
-  <div class="container">
-    <comments-list @get-comments="getComments"
-                   :comments="comments"
-                   :loading="loading"></comments-list>
-  </div>
-</template>
-
 <script>
 
 import axios from 'axios'
@@ -77,6 +61,22 @@ export default {
   components: {ResumeComponent, ResumeMaker, CommentsList}
 }
 </script>
+
+<template>
+  <div class="container column">
+    <resume-maker @add-item="addItem"></resume-maker>
+
+    <div class="card card-w70">
+      <resume-component :resume="resume"></resume-component>
+    </div>
+  </div>
+
+  <div class="container">
+    <comments-list @get-comments="getComments"
+                   :comments="comments"
+                   :loading="loading"></comments-list>
+  </div>
+</template>
 
 <style>
 .avatar {
